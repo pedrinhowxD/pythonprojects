@@ -1,0 +1,57 @@
+import os
+os.system('cls')
+
+print("Welcome to the Pedro's quiz game!")
+
+playing = input("Do you want to play? (type 'yes' or 'no') ").lower()
+score = 0
+
+if playing != "yes":
+    quit()
+
+print("Right, let's do it!")
+
+answer = input("What's the capital of Greece? ")
+if answer.lower() == "athens":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What's the capital of Belgium? ")
+if answer.lower() == "brussels":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What's the capital of Sweden? ")
+if answer.lower() == "stockholm":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What's the capital of Australia? ")
+if answer.lower() == "camberra":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What's the capital of Vietnam? ")
+if answer.lower() == "hanoi":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What's the capital of Island? ")
+if answer.lower() == "reykjavik":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+print(f"Você marcou {score} pontos.")
+print(f"Você acertou {(score/6) * 100}% do teste.")
